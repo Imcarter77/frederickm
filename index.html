@@ -1,0 +1,860 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Welcome To My Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Frederick O.Mensah</h1>
+								<p> <a href="https://html5up.net">Cyber Security</a> & 
+								<a href="https://html5up.net/license">I.T. Support EXPERT</a> </p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#Intro">About me</a></li>
+								<li><a href="#Work">Cyber Security</a></li>
+								<li><a href="#About"> I.T. Experience </a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="Intro">
+								<h2 class="major">About me</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p>An ambitious and hardworking individual, Qualified with a Cyber Security Certificate. Fast learner and keen to take on new responsibilities alone or as part of a team. My studies and over 8 years of I.T. working experiences in U.K. and Europe are evidence to my commitment and potentials. Trustworthy, enthusiastic and striving to achieve personal and professional goals.</a>.</p>
+								<p>KEY SKILLS</p>
+								<p>My studies and work experiences equipped me with the following useful and transferable skills: <br/>
+									•	Excellent interpersonal, time management and organisational skills with a great attention to detail <br/>
+									•	Excellent project management skills with a strong written and oral communication skills in English & Italian<br/>
+									•	Strong knowledge of current and emerging technologies and in-depth understanding of the current threats in I.T.<br/>
+									•	Excellent knowledge about the functions and operations of software such as Ms Office package, Office 365, Azure Endpoint, OneDrive, Teams, Windows servers, networks, hardware and O.S. such as Microsoft Windows XP,7, 8 & 10, Apple, Android and latest mobile technologies and ability to program with Python <br/>
+									•	Ability to multitask and critically analyse workload and prioritise urgent and important tasks <br/>
+									•	Great listening and questioning skills, alongside a great ability to interact with clients confidently to identify problems and efficiently resolve them both in person, remotely and via telephone <br/>
+									•	Knowledge of information security solutions, including data loss prevention, data management, intrusion detection and prevention, network security monitoring and vulnerability management. <br/>
+									•	Team player and ability to work on my own initiative with strong analytical and problems solving skills <br/>
+									</p>
+
+								<p>EDUCATION</p>
+
+						        <P>2021-2022 <br/>
+								    Cyber Security, University of the West of England Bristol, United Kingdom <br/>
+								    January 2019 <br/>
+								    Cisco ICND1, The Network Academy Leeds, United Kingdom <br/>
+									2016-2017<br/>
+									BA Hons in Politics, Leeds Beckett University, United Kingdom <br/>
+									(Transferred to Level 6 as my family moved to England in 2015)<br/>
+									2012-2015<br/>
+									BA Hons in International Relations and Affairs, University of Florence, Italy<br/>
+									2006-2012<br/>
+									BTEC Level 3 subsidiary Diploma in Electronics and Telecommunications
+									Istituto Tecnico Industriale Statale Fermo Corni, Modena, Italy
+									</P>
+
+								<P>2016-2017 VOLUNTEERING EXPERIENCES  </P>
+								    <P> •	Volunteer Shop and Support Assistant at OXFAM Shop, Leeds, UK <br/>
+										•	Volunteer Community Support at Leeds Refugee forum, Leeds, UK <br/>
+										</P>
+
+								<P> LANGUAGES AND NATIONALITY</P>
+								<P> Native level in English, Italian & Ghanaian <BR/>	                          
+									Nationality: British Citizen </P>
+
+								<P>EXTRA COURSES AND CERTIFICATES</P>
+
+								 <p> •	Full UK/EU Driving Licence and Own Car & Valid CRC/DBS certificate <br/>
+									•	Time Management Course – Univar Solutions –Oct 2019 <br/>
+									•	Registered Football Referee with Manchester Football Association <br/>
+									</p>
+                                
+								<P>See below for old projects </P>
+								<p> • <b> <a href ="http://fmoc.altervista.org/index.html"target="_blank">First personal online hosted website </a> </b> <br/>
+									• <b> <a href ="http://frederickmensah.altervista.org/index.html"target="_blank">College thesis hosted online </a> </b> <br/>  
+								
+									</p>
+
+
+
+							</article>
+
+						<!-- Work -->
+							<article id="Work">
+								<h2 class="major">Cyber Security</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<p> <b> BASIC PENTESTING </b> </p>
+
+                            	<p> 
+									Performed a complete boot to root example of penetration testing along side try hackme basic Pentesting website. <br/>
+									(Service Enumeration) - Nmap – It was used to identify which services were connected to the machine we were working on.<br/>
+									In our case we discovered that multiple services were opened in the scan report. <br/>
+
+									<span class="image main"><img src="images/pent.jpg" alt="" /></span>
+
+									Dirb- We use this perform a scan through all the common web directories to discover if there is an existing comment we can use during the process- dirb http://<IP_ADDRESS>  <br/>
+
+										enum4linux <IP_ADDRESS> : We use this command to identify user accounts on the machine. <br/>
+											BRUTE FORCING – To brute force a password is to force the password out with multiple passwords – to do that we need a password list. <br/>
+											Which we can use rockyou.text (which is a world known password list with tens of thousands of passwords)
+
+									<span class="image main"><img src="images/pent1.jpg" alt="" /></span>
+
+									Hydra is the command we use to brute force the password out. – <br/>
+                                    
+									hydra -l jan -P /usr/share/wordlists/rockyou.txt <IP_ADDRESS> ssh   <br/>
+
+							    	<span class="image main"><img src="images/pent2.jpg" alt="" /></span>
+											
+									When this is deployed, it takes sometime for it to match the right password. <br/> And when completed it comes back with results like below: LOGIN: Jan PASSWORD: armando
+                                    
+								    <span class="image main"><img src="images/pent3.jpg" alt="" /></span>
+
+									Now we can log into Jan’s account .
+                                    ssh jan@<IP_ADDRESS> to connect to the machine using the password as discovered (armando)
+									
+									<span class="image main"><img src="images/pent4.jpg" alt="" /></span>
+                                    This granted us access to Jan’s account, but we found out that Jan is not an Admin user or root by running Sudo -1 <br/>
+                                    Navigate to home to find out if there is any other user, we can try by running /home <br/>
+                                    We moved into Kay (/home/kay). In Kay’s access we discovered that she has a pass.bak file which we do not have access to either
+									<span class="image main"><img src="images/pent5.jpg" alt="" /></span>
+									We will use uname and cat /etc/issue <br/>
+									The above command will scan all the system to find all important information <br/>
+									After all the information are provided, we will into kay’s account for any private keys by running /home/kay/.ssh 
+									<span class="image main"><img src="images/pent6.jpg" alt="" /></span>
+									
+									We will run ssh -i id_rsa kay@localhost <br/>
+                                    We will actually see the private key which has been left in there. <br/>
+									But when tried to access it we were denied as it asks for a passphrase. To retrieve the passphrase, we will copy all the RSA Private key file onto our attacking machine – we will use nano and paste it from our clipboard.<br/>
+                                    To convert this Key into a hash, we will use John the ripper. <br/> We will use the following command to John : /usr/share/john/ssh2john.py key_file > key_hash
+ 
+									<span class="image main"><img src="images/pent7.jpg" alt="" /></span>
+
+									Now we will use  cat key_hash   to examine what we can pull out of that hash and then use John the ripper to crack the hash by using /usr/sbin/john key_hash
+
+									<span class="image main"><img src="images/pent8.jpg" alt="" /></span>
+
+									Which returns the Key: beeswax <br/>
+									Now we will back to our existing ssh connection and use the passphrase we discovered.  ssh -i id_rsa kay@localhost
+									
+									<span class="image main"><img src="images/pent9.jpg" alt="" /></span>
+									Successfully logged into the account now! <br/>
+									Now we run cat pass.bak to see what is inside the password backup file.
+									We will Sudo -l and then enter the password for Kay and we discovered that the user has admin rights!<br/>
+									
+									We will now Sudo -i to get into the root.
+							        we will use ls and then cat flag.txt to discover the final flag on the the machine which Kay is admin on
+									
+                                    <span class="image main"><img src="images/pent10.jpg" alt="" /></span>
+
+								</p>
+
+								<p> <b> BASIC APPLICATION SECURITY</b> </p>
+								<P> This section we looked into performing a vulnerability assessment or a penetration testing which is usually been requested by companies.<br/>
+
+									Vulnerability Assessment is a systematic way of examining core assets and understanding if they might pose a threat to a company by comparing them to a set of criteria.<br/>
+									
+									Penetration test is when a hacker is given a green light to attack a system by gaining access into it and have to document the whole process of acquiring the access.<br/>
+									
+									
+									We will walk through the OWASP (Open Web Application Security Project) Juice Shop and we will focus on Injection, Broken Authentication, Sensitive Data Exposure, Broken Access Control and Cross- Site Scripting (XSS). <br/><br/>
+									
+									INJECTION (https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html)
+									When performing this in a company, please make sure they are made aware as this can cause a downtime and a potential loss of data. <br/>
+									
+									There are 3 types on injection:  <br/>
+									1.	SQL Injection: Attacker enters a malicious query to retrieve or temper data from the database or in some cases log into accounts<br/>
+									2.	Command Injection:  Basically, web applications take input and user-controlled data and run them as commands when you log into it. An attacker may tamper with this data and use it to execute their own system commands (https://cwe.mitre.org/data/definitions/77.html)<br/>
+									3.	Email Injection: System vulnerability which allows users to send email addresses without an initial authorization by the email server. The attacker literally adds extra data to fields, which are not interpreted by the server correctly.<br/>
+
+									SQL INJECTION <br/>
+									Full description of this process can be found in the link below:<br/>
+									 (https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection)<br/>
+									For us to perform a scenario of SQL injection, we will use burp suite and we will incept traffic coming from our browser to examine the requests sent and received. <br/>
+									We tried to log into the Administrator’s account by trying random username and password (e.g. user and pass) which were incepted by burp suite. <br/>We can modify the content of this read as following: {“email”:”’ or 1=1’’”,”password”:”pass”} and that gave us a flag which enabled us to log in successfully. <br/>
+									If we wanted to log into a particular, we can perform the same attack but with a valid email: <br/>
+									{“email”:”bender@juice-sh.op’--”,”password”:”pass”}.  And incept the traffic and modify the end of the string and that will also provide us with a string and let us in. <br/>                                                              
+									
+																		   BROKEN AUTHENTICATION <br/>
+									Full description of the method can be found in the link below:<br/>
+									https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication.html<br/>
+									
+									We can access the admin’s account with the SQL injection above but we do not know his password. <br/> So we will use the brute force in Burp Suite, attempt to login again with the known admin email and right click in Burp suite to send to intruder.<br/>
+									When the payload is displayed, change the password quotes to: {“email”:”admin@juice-sh.op’--”,”password”:”§§”}. <br/>
+									For the payload, we use the password list best1050.txt (install via apt-get install seclists), or find this in /usr/share/seclists/Passwords/Common-Credentials/best1050.txt. <br/>
+									
+									<span class="image main"><img src="images/app.jpg" alt="" /></span>
+									
+									We run the attack and examine the request code-  <br/>
+									A failed request will receive a 401 Unauthorized   <br/>
+									Whereas a successful request will return a 200 OK. <br/>
+
+
+									This will give us the admin’s password and return a positive flag.<br/>
+									The above can also be briefed further in the following link : <br/> https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html <br/>
+									We can also Manipulate the admin’s password by changing it. <br/>
+									We found before he likes Star Trek, and his security question is “Your eldest siblings middle name”. <br/>Dig around on Google and you’ll find George Samuel Kirk. <br/> 
+									We will use the change your password option and that will allow us to change his password using his elder brother’s name which is Samuel.<br/> (https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html <br/>
+									
+									SENSITIVE DATA EXPOSURE<br/>
+									This process s explained further in the link below:<br/>
+									https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html<br/>
+									Sensitive data can be exposed publicly and can be easily accessed externally. <br/>
+									Scenario #3: The password database uses unsalted or simple hashes to store everyone’s passwords. <br/>A file upload flaw allows an attacker to retrieve the password database. <br/>All the unsalted hashes can be exposed with a rainbow table of pre-calculated hashes.<br/> Hashes generated by simple or fast hash functions may be cracked by GPUs, even if they were salted. <br/>
+									In our case we in Try hack me, we have a website which their terms and conditions is exposed to the public and in there you can find a link to a legal.md on an FTP share. <br/>Which is also exposed to the public.<br/>
+									
+									<span class="image main"><img src="images/app1.jpg" alt="" /></span>
+									
+									Can we download the backup file? Try to download package.json.bak from the FTP directory. <br/>However, we get a 403 error saying “only .md and .pdf files are allowed”.   <br/>                                             
+									 We can use a poison null byte %00 to get around this. It is a NULL terminator meaning that anything afterwards is ignored – however it’s enough to bypass the file extension check: package.json.bak%2500.md (we encode the poison null byte in a url encoded format to work with this file download).
+									This allows us access now. <br/>
+
+									BROKEN ACCESS CONTROL <br/>
+									More information about this can be found here:   https://owasp.org/Top10/A01_2021-Broken_Access_Control/ <br/>
+									When Broken Access Control exploits or bugs are found,<br/> it will be categorised into one of two types:<br/>
+
+									<span class="image main"><img src="images/app2.jpg" alt="" /></span>
+									
+									To action this we will open the debugger on firefox or source in chrome and use the web inspector to search for the term “admin”.<br/>
+									 Which will be found in the ‘’main-es2015.js file’’  There is a path called ‘’administrator” – That is what we need to be logged in as.
+									<span class="image main"><img src="images/app3.jpg" alt="" /></span>
+
+									Can you view another user’s basket as administrator? Click “Your basket” as admin and capture this in Burp Suite.<br/> You may see GET /rest/basket/1 –
+									If you change the number to 2, it  will show the basket of User ID 2.<br/>
+									
+																   XSS OR CROSS-SITE SCRIPTING<br/>
+									More information about this can be found here:<br/>
+									https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS).html
+									<br/> its an injection attack where malicious JavaScript gets injected into a web application with the intention of being executed by other users.<br/>
+									
+                                    <span class="image main"><img src="images/app4.jpg" alt="" /></span>
+									<span class="image main"><img src="images/app5.jpg" alt="" /></span>
+
+									TO PERFORM A PERSISTENT XSS <br/>
+                                    Persistent XSS needs to be logged somewhere – last IP address is logged in the admin account. <br/>
+									Use Burp to intercept the new IP when we log out. We can then replace True-Client-IP with the above command again. <br/>
+									 When we sign back in as admin, the popup appears – showing that the attack is persistent.<br/>
+
+									 <span class="image main"><img src="images/app6.jpg" alt="" /></span>
+									 <span class="image main"><img src="images/app7.jpg" alt="" /></span>
+                                    
+									TO PERFROM A REFLECTED XSS  <br/>
+									<span class="image main"><img src="images/app8.jpg" alt="" /></span>
+
+                                    Thanks to Cake (TryHackMe Member) for hosting the OWASP Juice Shop example room.
+
+
+								</P>
+
+
+								<p> <b> SECURITY OPEATIONS AND INCIDENTS RESPONSE</b> </p>
+								<P> This will introduce us to the work of Security Operations Centre (SOC) and the use of Security information and Event management (SIEM) systems.<br/>
+									SOC- defends systems and networks by monitoring activities and triage alerts against published threat reports, and will provide incident response in the case of a breach. <br/>
+                                    
+									<b>SPLUNK</b> <br/>
+									Splunk is a widely used SIEM platform that provides a mechanism to ingest and search for a data at a scale. <br/> Best for machine-generated logging. Used outside of cybersecurity for searching other big data domains.  
+                                    Splunk queries always begin with the command search. <br/> <br/>
+									Below is a real-life scenario of a ransomware infection which we will be looking into today. <br/>
+									<span class="image main"><img src="images/soc.jpg" alt="" /></span>
+
+									IN ORDER TO RESOLVE THIS ISSUE, WE WILL BE USING LOCKHEAD MARTIN’S KILL CHAIN TO BREAK DOWN EACH ATTACK AND REPORT IT ACCORDINGLY. <br/>
+									<span class="image main"><img src="images/soc1.jpg" alt="" /></span>
+									<span class="image main"><img src="images/soc2.jpg" alt="" /></span>
+
+
+									<b>RECONNAISSANCE </b> <br/>
+									What IP is scanning our web server? (imreallynotbatman.com) <br/>
+									By searching that website in splunk website- | stats count by sourcetype, we were able to discover the ip <br/>
+									What web scanner scanned the server?<br/>
+									Acunetix- is one of them<br/>
+									What is the IP address of our web server? <br/>
+									By using the headers command     |stats count by dest ip - we discovered the following
+									192.168.258.78  which had a very high and suspicious count<br/>
+									What content management system is imreallynotbatman.com using?<br/>
+									|stat court by url<br/>
+									|sort- count<br/>
+									Joonla – has the highest count so it’s that one.<br/>
+									
+									<b>EXPLOITATION   </b><br/>
+									What address is performing the brute-forcing attack against our website? <br/>
+									Dirb is also useful in exploitation.  <br/> |starts court by src ip <br/>
+									|stat count by http_method<br/>
+									We will discover 40.80.148.42 <br/>
+									What was the first password attempted in the attack?<br/>
+									|table _time . form_data<br/>
+									|sort by _time       and the first password will be in the first line<br/>
+									One of the passwords in the brute force attack is James Brodsky's favorite Coldplay song. <br/> Which six-character song is it? YELLOW <br/>
+									What was the correct password for admin access to the content management system running imreallynotbatman.com?<br/>
+									 Batman<br/>
+
+									 How many seconds elapsed between the time the brute force password scan identified the correct password and the compromised login rounded to 2 decimal places?<br/> 92.167 <br/>
+									 How many unique passwords were attempted in the brute force attempt? <br/> 412 <br/>
+
+									 <b>INSTALLATION</b> <br/>
+									 What is the name of the executable uploaded by P01s0n1vy?<br/>
+									 3791.exe <br/>
+									 What is the MD5 hash of the executable uploaded? <br/>
+									 |stats value (MD5)    will return a long hash MESP5D…………… <br/>(This is used to maintain a file’s intergrity)<br/>
+									 
+									 <b>ACTIONS ON OBJECTIVE</b><br/>
+									 What is the name of the file that defaced the imreallynotbatman.com website? <br/>
+									 Sourcetype=suricata dest_ip …… and filtering through -<br/>
+									 We found 2 php files and 1 poisonivy file<br/>
+									 <b>COMMAND AND CONTROL </b><br/>
+									 This attack used dynamic DNS to resolve to the malicious IP.<br/> What fully qualified domain name (FQDN) is associated with this attack?<br/>
+									 Weaponization<br/>
+									 What IP address has P01s0n1vy tied to domains that are pre-staged to attack Wayne Enterprises?<br/>
+									 Based on the data gathered from this attack and common open source intelligence sources for domain names, <br/>what is the email address that is most likely associated with P01s0n1vy APT group?<br/>
+									 
+									 <b>DELIVERY</b><br/>
+									 GCPD reported that common TTPs (Tactics, Techniques, Procedures) for the P01s0n1vy APT group if initial compromise fails to send a spear phishing email with custom malware attached to their intended target. <br/> This malware is usually connected to P01s0n1vy’s initial attack infrastructure. <br/> Using research techniques, provide the SHA256 hash of this malware.<br/>
+									 (This stage AND Weaponization can be can be searched on Virus total and online ) - which can be used to check files, url and anything that you believe might be infected.
+									 
+									 Please refer to the PDF below for quick reference to Splunk <br/>
+								
+									
+
+									</P>
+
+
+								<p> <b> METASPLOIT</b> </p>
+								   <P> 
+									An open-source pen testing framework, a powerful tool used by security engineers around the world.<br/> Maintained by Rapid, Metasploit is a collection of not only thoroughly tested exploits but also auxiliary and post-exploitation tools.<br/>
+
+									It offers proved concepts in line with CVE (a common agreed standard for identifying with common vulnerabilities) <br/> - e.g., of CVE-2022-25320 can be found here - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25320 <br/>
+									Most of the attacks are logged in the NVD ( National Vulnerability Database)<br/> https://nvd.nist.gov/vuln/detail/CVE-2022-25320 <br/>
+									
+									Metasploit has many commands but the one you will use most of the time are Search, Show and Use <br/>
+									<span class="image main"><img src="images/meta.jpg" alt="" /></span>
+									<span class="image main"><img src="images/meta1.jpg" alt="" /></span>
+									
+									EXPLOIT - most commonly used and contains all the exploit codes to be used <br/>
+									PAYLOAD- It contains the various bits of shellcode we send to execute an exploitation <br/>
+									AUXILIARY- Used to scan and verify that machines are exploitable<br/>
+									POST- this provides the capability of looting and pivoting after an exploitation<br/>
+									ENCODER-Modifies the appearance of our exploitation in order to avoid been detected by a defender<br/>
+									NOP (No Operation)– it’s used with buffer overflow and ROP attacks<br/>
+									LOAD- Command used to load different modules as every module is not loaded in by default.<br/>
+									
+									BELOW ARE SOME COMMANDS WHICH YOU CAN USE<br/>
+									db_nmap -sV xx.xx.xxx.65<br/>
+									command hosts<br/>
+									command services<br/>
+									command show options<br/>
+									command search<br/>
+									command vulns<br/>
+									command use icecast<br/>
+									command search multi/handler.<br/>
+									command use NUMBER_NEXT_TO  exploit/multi/handler<br/>
+									command use NUMBER_FROM_PREVIOUS_QUESTION.<br/>
+									command set PAYLOAD windows/meterpreter/reverse_tcp<br/>
+									
+									
+									Metasploit in summary is a framework for running ruby scripts and triggering netcast servers <br/>
+									
+									
+									Credits: <br/>
+									https://tryhackme.com/room/rpmetasploit#<br/>
+									https://tryhackme.com/room/bolt <br/>
+								
+								  </P>
+
+
+
+
+
+
+								<p> <b> INTRODUCTION TO MALWARE ANALYSIS</b> </p>
+								   <P>  <b>MALWARE</b> <br/>
+									 
+									It’s a form of incident response and file analysis which might turn out to be healthy or malicious.<br/>
+									When analysing a malware, the following needs considering:<br/>
+									1.Point of entry (PoE):<br/> - How did it come into the PC? through an email, downloads or someone clicked on It accidentally? We will review our spam filters and train our users for future prevention<br/>
+									2.How to tell if a malware has been executed? <br/>Processes, files or any alien communication<br/>
+									3. How does malware works? <br/> Does it infect devices? Encrypt files or install anything like a backdoor or Remote Access Tool (RAT) – ransomware…?<br/>
+									4.Can we prevent or detect further infections?<br/>
+									
+									MALWARE CAMPAIGNS – <br/> Classified into 2 types: Targeted or Mass Campaign<br/>
+									
+									TARGETED: <br/> When the attack is targeted at a certain individual or organisation. e.g., DarkHotel malware which was designed to steal information from government officials.
+									<br/> MASS CAMPAIGN: The entire purpose of this malware is to infect as many devices as possible and perform whatever it may regardless of the target. E.g., the Crouching Yeti (Energetic Bear) Campaign targeted industrial, manufacturing, pharmaceutical, construction, education and IT.<br/>
+									
+									<br/>To identify a malware attack, the ultimate process is broken down below:<br/>
+									DELIVERY: <br/> How we are going to deliver the piece of malware or file e.g., through USB or PDF attachment <br/>
+									EXECUTION:<br/>  How we are going to execute the malware? How it actually works. Is it a ransomware or a spyware – does it encrypts files, records keystroke information or display adware? <br/>
+									MAINTAINING PERSISTENCE:<br/> An attacker might want to maintain persistence after gaining access <br/>
+									PERSISTENCE:<br/> An attacker will keep logs and access details in order to revisit and perform more actions.<br/>
+									PROPAGATION:<br/> Its an idea of propagating the attack- if you can infect one device, why not affect more?<br/>
+									
+									MALWARE MAY LEAVE ON A HOST AFTER ATTACK ANY 2 OR BOTH OF THE FOLLOWING SIGNATURES:<br/>
+									HOST-BASED SIGNATURES: These are the results of execution and persistence performed by the malware.<br/>
+
+									<br/>NETWORK-BASED SIGNATURES: observation of any networking communication taking place during delivery, execution and propagation. <br/>
+
+									There are two categories used when analysing malware:<br/>
+									1. Static Analysis:<br/> Used to gain a high-level abstraction of the virus sample. This is done by using techniques such as signature analysis<br/>
+									2. Dynamic Analysis: <br/>A more involved approach. The extraction of the sample is largely built here. It essentially involves executing the sample and observing what happens. This is not a safe method because if the sample turns out to be a Ransomware, you will lose all your files.<br/>
+									
+									Static and Dynamic tools overlaps amongst themselves sometimes.<br/>
+									Provided Static Analysis Tools:<br/>
+									C:\Users\Analysis\Desktop\Tools\Static\PE Tools<br/>
+									•	Dependency Walker (depends)<br/>
+									•	PeID<br/>
+									•	PE Explorer<br/>
+									•	PEview<br/>
+									•	ResourceHacker<br/>
+									C:\Users\Analysis\Desktop\Tools\Static\Disassembly<br/>
+									•	IDA Freeware<br/>
+									•	WinDbg<br/>
+									C:\Users\Analysis\Desktop\Tools\Sysinternalsuite<br/>
+									•	ResourceHacker<br/>
+									C:\Users\Analysis\Desktop\Tools\Dynamic<br/>
+									Cucko sandbox  - Cuckoo.cert.cc  (You can send a file there and it will analyse it for you)<br/>
+									
+									I WILL PERFORM A MALWARE EXPERIMENT BY CONNECTING TO A WINDOWS ANALYSIS ENVIRONMENT.<br/>
+									
+									First step we will try to obtain the MD5 Checksums of the provided files.<br/>
+										
+									MD5 “Checksums” – are a prominent attribute in the malware community because they are the cryptographic fingerprints of the files and allows a uniformed identification throughout the community.<br/>
+
+									Example when you receive a file from an unknown origin, you are able to identify their origin and safety by using their MD5 sum against a website like virustotal which will analyse the whole file for you.<br/>
+									<span class="image main"><img src="images/mal.jpg" alt="" /></span>
+									<span class="image main"><img src="images/mal1.jpg" alt="" /></span>
+									
+									HOW TO IDENTIFY IF AN EXECUTABLE IS OBFUSCATED <br/>
+
+									There are few tools used to identify that a file is an executable but the one with the most huge database is PeID.  <br/>
+									<span class="image main"><img src="images/mal2.jpg" alt="" /></span>	
+										
+									WHAT IS OBFUSCATION/ PACKING?<br/>
+									Packing is one form of obfuscation that malware Authors employ to prevent the analysis of programmes. There are both legitimate and malicious reasons as to why the Author of a program will want to prevent the decompiling of their program. <br/>
+									This method is used legitimately to protect intellectual property.  Basically, to prevent people reversing its behaviours to understand its aim of achieving infections.<br/>
+									We can use the PEiD to identify if a file is been packed.  As seen below, the file is packed and the executable does not really make sense unless it is been unpacked.<br/>
+									<span class="image main"><img src="images/mal3.jpg" alt="" /></span>	
+
+									PEiD can detect that a file is been packed but can not de-obfuscate them. <br/> In the case we will use 
+									IDA Free - which will de-obfuscate the file. <br/>
+									Obfuscated code is much harder to analyse at least at the static level, as we're presented with very little information <br/>
+									
+								
+									<b>STRINGS</b><br/>
+									They are essentially the ASCII / Text contents of a program which could be anything from passwords for self-extracting zips, to bitcoin addresses in ransomware samples.<br/>
+									We can use command lines to analyse a string or GUI tools. <br/> Example of a GUI too we can use is the PE explorer.  <br/> Which is more descriptive and easy to analyse. <br/>
+									
+									<span class="image main"><img src="images/mal4.jpg" alt="" /></span>	
+
+									<b>IMPORTS</b> <br/>
+									The classification of IDA Freeware is arguable as the tool can be used for both static and dynamic analysis. <br/>there are two classifications of tools like IDA Freeware:<br/>
+									•	Disassemblers <br/>
+									•	Debuggers  <br/>
+									Disassemblers reverse the compiled code of a program from machine code to human-readable instructions (assembly). <br/>This is limited to how the program represents itself in its current state!<br/> I.e. If the contents of an executable changes during execution - "Disassemblers" will not reflect this <br/>
+									Debuggers deploy the same techniques used by "Disassemblers”;<br/> "Debuggers" essentially facilitate execution of the program - where the analyser can view the changes made throughout each "step" of the program <br/>
+									These 2 tools will present you with the picture of the programs itself but be careful because if the program is malicious, you will end up been infected. <br/>
+									The below are very useful for malware analysis- <br/> advisable to use this for most of the analysis as they will give you in-dept analysis on malware i.e., the submission, the score level, logs etc...<br/>
+									
+									Cuckoo sandbox App<br/>
+									https://App.any.run/submissions <br/>
+									
+									Credits: THM Malware introductory <br/>									
+									</P>
+
+								
+								<p> <b> INFORMATION RISK</b> </p>
+								   <P> 
+									<b>INTRODUCTION TO ISO27001</b> <br/>
+									(Internation organization for standardization) – Is a wordwide federation of national standards bodies. (ISO Member bodies) <br/>
+									<span class="image main"><img src="images/iso.jpg" alt="" /></span>
+								    <b>RISK</b> <br/>
+									Risk is managing the undefinable which can happen whilst at work.  – more info can be found in the below link:<br/> https://www.ncsc.gov.uk/collection/risk-management-collection/essential-topics/fundamentals
+									There is no clear definition as an essential aspect of managing risk because even for most organisations there is big uncertainty about how to define and manage it.<br/>
+									
+									Our economy, society and individual lives have been transformed by digital technologies. <br/>They have enabled improvements in science, logistics, finance, communications and a whole range of other essential activities. <br/>As a consequence of this, we have come to depend on digital technologies, and this leads to very high expectations of how reliable these technologies will be.<br/>
+									
+								   </P>
+
+
+								<p> <b> COMPUTATIONAL THINKING</b> </p>
+								   <P> Its basically setting up a conceptual plan to resolve a problem quicker and effectively with solutions which can be used in different type of situations.<br/> E.g., to resolve any mathematical problem without the use of a calculator: buying a ticket, cooking etc <br/>
+									   
+								         
+                                     <b>THE GENERAL STEPS REQUIRED IN COMPUTATIONAL THINKING ARE BELOW:</b><br/>
+                                     1.	Problem identification (finding the cause, needs and requirements of it)-e.g. You need a new Job because you don’t like yours.<br/>
+                                     2.	Decomposition of the problem (breaking it down into sub manageable problems) - make a chart to see the type of jobs of interest.<br/>
+                                     3.	Recognition of the patterns of the problem (using commonalities and similarities to spot it) – You have your old CV on your PC <br/>
+                                     4.	Generalising the problem (Generalise the problem and solution elements needed for application) _ You can use your old CV on your PC and you can update it <br/>
+                                     5.	Abstraction of the problem (Cutting out the unnecessary and focusing on main issues) – You can manage the complexity by listing jobs you can use your CV to target <br/>
+                                     6.	Modelling the problem (presenting the problem mathematically or diagrammatically)- Making a list of websites or agencies you can upload your CV to apply for jobs of interest <br/>
+                                     7.	Making a logic or Algorithm of the problem (setting up the sequence and rules needed ) – brushing up on your interview practices and memorising your CV<br/>
+                                     8.	Coding the problem with an executable problem (With Python, C etc) -Putting the CV, interviews at work by showing it to a colleague or friend<br/>
+                                     9.	Testing the program – Sending your CV’s out and putting yourself to work if the CV and interviews are efficient.<br/>
+                                     10.	Evaluation of the problem – If they are efficient, you will get interviews and eventually land a job and your problem will be resolved.<br/>
+
+
+								   </P>
+
+						
+							</article>
+
+						<!-- About -->
+							<article id="About">
+								<h2 class="major">Work Experience </h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p> -Started working in I.T. in Italy for over 8/9 years but in order to keep everything compact, I have reduced the timeline to start from June 2016 till present </p>
+                                
+								<p> <b> March 2020-Present </b> <br/>
+									Service Desk Analyst (1st, 2nd & 3rd line Support) at Rendall and Rittner Ltd., Manchester, United Kingdom </p>
+
+									<p> •	Supporting over 1000 Head Office & Onsite end user laptops, desktops, printers, docks and monitors in U.K <br/>
+										•	Working in a high pressure, fast-paced environment, collaborating effectively with internal and external teams to ensure all clients and business IT related concerns are appropriately handled.<br/>
+										•	Acting as the manager of our Manchester branch and overseeing all IT related issues are handled efficiently. <br/>
+										•	Headed multiple projects e.g., Onboarded all Head Office Laptops from Hybrid Join to AD join to facilitate data transfer and user management and remodelled our Service desk flows in hornbill for entire company<br/>
+										•	Onboarded successfully multiple Onsite New developments in London, Nottingham, York & Leeds. (Involves travelling to the site and setting up the PC by running the company’s OSE Script in PowerShell, performing data transfer, applying policies and setting up any additional devices owned by the development)<br/>
+										•	Handling all BAU incidents and adhering to the SLA or escalating it to the right third-party provider such as Jasper, Propman, Grosvenor, Microsoft, HP or Dwellant.<br/>
+										•	Providing daily hands-on solutions- Active directory, Windows Server, Office Package (Outlook, word etc), Office 365, Microsoft Enterprise, Microsoft 365 Admin centre, Microsoft Azure Endpoint, Windows Virtual Desktop, Remote Desktop, OneDrive, Dropbox, Azure VPN, Meraki alerts, Teams Video and calling support, MFA, SharePoint, Microsoft Edge, Propman Support, Papercut, Vision Reports, PowerShell.<br/>
+										•	Creation of end user accounts (ID, email, phone number) laptop building and postage of devices to homes <br/>
+										•	Remote assistance through TeamViewer, Quick Assist and GotoAssist or in person and documentation of fix <br/>
+										•	Support and troubleshooting hardware such as laptop/desktop, network/local printers, monitors and docks <br/>
+										 </p>
+
+								<p> <b> April 2018- March 2020 </b> <br/>
+									EU Service Desk Analyst at Univar Solutions, Bradford, United Kingdom </p>
+                                   <p> •	Providing 1st & 2nd IT Support to over 10000 users across Europe Middle East and Asia using ServiceNow. <br/>  
+									•	Acting as first point of contact for all arising issues and efficiently handling the issue or escalating to the right teams such as SAP, ASW, Cyber team, Salesforce, Verizon, MDM, Q pricing, 02, SICL, RICOH, HP, Apple etc. <br/>
+									•	Providing daily hands-on solutions- Active directory, Microsoft Office package 2013 & 2016, o365, Cisco Any connect & Umbrella and Cisco IP phone support and Setup, WebEx Video and Audio Conferencing, Citrix, VPN, LAN and WAN Support, MFA, Tableau, cyber and Virus support (McAfee, Knowbe4 & Win defender) <br/> 
+									•	Creation, maintenance and support of user’s accounts (Global ID, Q pricing ID, ASW accounts, SAP accounts) <br/>
+									•	Remote assistance through TeamViewer, SCCM, Skype for business and in person and documentation of fix <br/>
+									•	Support and troubleshooting software and hardware for laptop/desktop, tablet, network printers & mobiles <br/>
+									</p>
+                                  
+								<p>  <b> November 2017-April 2018 </b> <br/>
+								    IT Service Desk Analyst at Tech Mahindra, Budapest, Hungary </p>
+									<p> •	Excellent customer support to thousands of users across Europe, Middle East and Asia (EMEA) <br/>
+										•	Resolve help desk issues promptly and efficiently by troubleshooting and offering best solutions for computers, printers, mobile phones and servers for all users, using Citrix helpdesk adhering to the agreed upon Service Level Agreement (SLA) and Operation Level Agreement Compliance (OLA) <br/>
+										•	Work daily with Active directory, Exchange, Microsoft Office Package, Citrix and as well as Windows Server 2012 and supporting Windows 7, 8 and 10. Mobile PDA devices installation, support and training of users <br/>
+											
+									</p>
+								
+								<p>  <b> September 2017-October 2017  </b> <br/>
+									IT Support Technician Contractor at Loreto Sixth Form College, Manchester, UK </p>
+								  <p>•	Supporting 3000 students and members of staff and teaching non-technical users through technical issues.   <br/>
+									 •	Resolve help desk issues promptly and efficiently and offering the best solutions for computers and printers using Zendesk helpdesk adhering to the SLA and OLA and documenting troubleshooting in knowledge base. <br/>
+									 •	Personally responsible for IT Support and presentations during school road shows in and around Manchester, ensuring Loreto College is represented in the best way to potential students. <br/>
+							 	  </p>
+
+								<p>  <b> August 2017- September 2017  </b> <br/>
+									IT Support Technician Self Employed Contractor at Insight, Leeds, U.K.  </p>
+									<p> •	Installation and support of telecommunication equipment and Assembly of hardware products and cabling while working closely with software suppliers to resolve operational issues. <br/>
+										•	Data transfer solutions. IP Printer setup, User configurations and drive encryptions services  <br/>            
+										•	Set up of Store Service Desk, Play Bar and Till PC and Windows 10 roll out and first time start up    <br/>  
+										 </p>
+
+							    <p>  <b> March 2017- July 2017  </b> <br/>
+								   IT Support Technician at Queen Margaret School, York, U.K </p>
+								   <p> •	Full 1st and Semi 2nd line Support of Microsoft 7/8 &10 and OS X technologies and diagnosis of applications, network (TCP/IP, DNS and DHCP) and infrastructure issues of the school <br/>  
+									   •	Troubleshooting and support of Desktops, laptops, printers and mobile device remotely and in person <br/>  
+									   •	Network Support using software such as Nagios, Smoothwall, IBM Lotus notes 8 and Symantec Antivirus <br/>  
+									   </p>
+
+
+								 <p>  <b> June 2016-November 2016   </b> <br/>
+									IT Support Technician through Revive IT recycling Limited, Leeds, U.K </p>
+
+									<p> •	Computer, Printers and Server Parts Technician, quality control, configuration & listing online on eBay  </p>
+
+
+
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<p>  <b> FrederickOMensah@icloud.com </b> <br/>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/frederick-o-mensah-a17230a9"target="_blank" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+	
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; F.O.M. <a href="https://html5up.net">2022</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
