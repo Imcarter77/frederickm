@@ -203,24 +203,34 @@
 								GitLab supports manual or controlled deployments to production through deployment jobs tied to a production environment.<br/>
 								<span class="image main"><img src="images/depprod.png" alt="" /></span>   
 								
-								
-								
-								
-								
-								
-								
-								
-								
-								
+				
 								
 								<p>  <b> 10.Monitoring and pipeline observability  </b>  
 								<span class="image main"><img src="images/monitoringp.png" alt="" /></span>      </p>
 
-								<b> 6.Deploying to Stage </b> <br/>
-								GitLab environments are commonly used to represent staging and production deployments in the pipeline<br/>
-								<span class="image main"><img src="images/depstage.png" alt="" /></span>  
-									
+								This phase gives visibility into pipeline health, job status, duration, and trends, which can then be monitored in Prometheus and Grafana using exporter-exposed metrics. <br/>
+
+								<span class="image main"><img src="images/metrics.png" alt="" /></span> 
+								The <b> gitlab-ci-pipelines-exporter </b> project provides a quickstart pattern where the exporter uses a GitLab API token with read_api access and exposes metrics on an HTTP endpoint such as :8080/metrics. 
+								<span class="image main"><img src="images/gitapi.png" alt="" /></span> 
+
+								<b>Docker Compose</b>A practical quickstart stack often includes three containers: the exporter, Prometheus, and Grafana, with Prometheus scraping the exporter endpoint and Grafana reading from Prometheus. <br/>
+									<span class="image main"><img src="images/services.png" alt="" /></span> 
+									<span class="image main"><img src="images/exposed.png" alt="" /></span>  <br/>
 								
+									<b>Prometheus scrape config</b> 
+									Prometheus needs a scrape target pointing to the exporter metrics endpoint, which is typically /metrics on the exporter container <br/>
+									<span class="image main"><img src="images/prome.png" alt="" /></span> 
+
+									<b>Grafana dashboard</b> 
+									Grafana can visualize these pipeline metrics by using Prometheus as a data source, and an existing dashboard for GitLab CI pipelines is available as dashboard ID 10620 <br/>
+									<span class="image main"><img src="images/graf.png" alt="" /></span>  <br/><br/><br/>
+
+
+
+									<p>  <b> Additional Projects & repository </b>  
+								<li><a href="https://github.com/Imcarter77/"target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://gitlab.com/imcarter77-group"target="_blank" class="icon brands fa-gitlab"><span class="label">linkedin</span></a></li> </p>
 								
 								
 								<br/><br/><br/> <br/><br/><br/><br/><br/><br/>
@@ -659,15 +669,15 @@
 									<p> 
 										
 										•	Designed, built, and maintained automated CI/CD pipelines using GitLab CI/CD <br/>
-•	Implemented Prometheus and Grafana end-to-end, integrated with GitLab CI/CD to monitor performance, capacity, and degradation for early intervention. <br/>
-•	Embedded DevSecOps practices, including security scanning, IAM, MFA, and network controls, ensuring secure and auditable infrastructure <br/>
-•	Managed hybrid cloud infrastructure (Azure and AWS) across global sites with 10k+ users <br/>
-•	Automated administrative tasks (O365, AD group management) using PowerShell to reduce manual toil and saving team over 10+ hours weekly<br/>
-•	Led ITIL-aligned change, problem management, and release governance, ensuring compliant deployments in controlled environments<br/>
-•	Led operations across three UK sites, improving availability through proactive monitoring, root cause analysis, and reduced MTTR<br/>
-•	Administered Windows and Linux systems alongside O365, Exchange, SharePoint, and AD<br/>
-•	Owned global SAP B1 ERP platform, ensuring availability, security, and SLO adherence<br/>
-•	Documented runbooks and knowledge base articles to standardise incident response and support DevOps practices<br/>
+										•	Implemented Prometheus and Grafana end-to-end, integrated with GitLab CI/CD to monitor performance, capacity, and degradation for early intervention. <br/>
+										•	Embedded DevSecOps practices, including security scanning, IAM, MFA, and network controls, ensuring secure and auditable infrastructure <br/>
+										•	Managed hybrid cloud infrastructure (Azure and AWS) across global sites with 10k+ users <br/>
+										•	Automated administrative tasks (O365, AD group management) using PowerShell to reduce manual toil and saving team over 10+ hours weekly<br/>
+										•	Led ITIL-aligned change, problem management, and release governance, ensuring compliant deployments in controlled environments<br/>
+										•	Led operations across three UK sites, improving availability through proactive monitoring, root cause analysis, and reduced MTTR<br/>
+										•	Administered Windows and Linux systems alongside O365, Exchange, SharePoint, and AD<br/>
+										•	Owned global SAP B1 ERP platform, ensuring availability, security, and SLO adherence<br/>
+										•	Documented runbooks and knowledge base articles to standardise incident response and support DevOps practices<br/>
 
 										 </p>
 								
@@ -678,12 +688,12 @@
 									IT Analyst (2nd & 3rd line Support) at Rendall and Rittner Ltd., Manchester, United Kingdom </p>
 
 									<p>•	Led 2nd/3rd line incident escalations, shifting from reactive support to root cause-driven problem management <br/>
-•	Administered Windows Server, Azure AD, and Microsoft 365 services, managing configuration, ensuring operational continuity and security compliance in hybrid infrastructure <br/>
-•	Delivered key IT projects, including migration from Hybrid Join to Azure AD Join, improving user management and data efficiency <br/>
-•	Optimised Service Desk workflows (Hornbill), increasing resolution speed by 25% <br/>
-•	Applied infrastructure-as-code principles to Windows Server and Active Directory, improving consistency and reducing manual effort (PowerShell DSC- Desired State Configurations) <br/>
-•	Collaborated with Problem Management and Infrastructure teams to prevent reoccurring technical issues in hybrid environments.<br/>
-•	Delivered advanced level support with consistent SLA achievement and proactive engagement to prevent known errors.<br/>
+													•	Administered Windows Server, Azure AD, and Microsoft 365 services, managing configuration, ensuring operational continuity and security compliance in hybrid infrastructure <br/>
+													•	Delivered key IT projects, including migration from Hybrid Join to Azure AD Join, improving user management and data efficiency <br/>
+													•	Optimised Service Desk workflows (Hornbill), increasing resolution speed by 25% <br/>
+													•	Applied infrastructure-as-code principles to Windows Server and Active Directory, improving consistency and reducing manual effort (PowerShell DSC- Desired State Configurations) <br/>
+													•	Collaborated with Problem Management and Infrastructure teams to prevent reoccurring technical issues in hybrid environments.<br/>
+													•	Delivered advanced level support with consistent SLA achievement and proactive engagement to prevent known errors.<br/>
 
 										 </p>
 
