@@ -142,48 +142,44 @@
                                 
 								<p> <h2 class="subheading"> DEVOPS </h2> </p>
 								
-								<p> <b> END TO END DEVOPS PIPELINE</b> 
+								<p> <b> END TO END DEVOPS PIPELINE</b> <br/>
 							 This is a practical GitLab CI/CD pipeline reflecting a typical DevOps workflow, including stages for testing, building, security scanning, deployment to staging, and production release. The pipeline is defined using a <b>.gitlab-ci.yml</b> file written in YAML.
 								<span class="image main"><img src="images/pipe.jpg" alt="" /></span>      </p>
 
 
 								<p> <b> I will divide this into 3 phases</b> <br/> </p>
 
-							  <p> <b> The first phase is all about Validation </b>  <br/>
-								<span class="image main"><img src="images/phase1.png" alt="" /></span>      </p>
+							  <p> <b> The first Phase is all about Validation </b>  
+								<span class="image main"><img src="images/phase1.png" alt="" /></span>      
+							    
+							
+1) <b> Commit and branch checks  </b> <br/>
+This first phase typically runs automatically on push or merge request and can validate branch rules or basic repository state before deeper jobs run. <br/>
+<span class="image main"><img src="images/commit.png" alt="" /></span>  
 
 
-								<p>  <b> The second phase is all about Packaging Safely </b>  <br/>
+2) <b> Lint </b> <br/>
+GitLab jobs in a lint stage are commonly used to fail fast on syntax and code quality issues before tests or builds continue. <br/>
+<span class="image main"><img src="images/lint.png" alt="" /></span>  
+
+3) <b> Unit tests </b> <br/>
+GitLab supports separate test jobs and test report artifacts, which makes this a natural stage for unit testing and quality validation. <br/>
+<span class="image main"><img src="images/unit.png" alt="" /></span>  
+							
+							
+							    </p>
+
+
+								<p>  <b> The second phase is all about Packaging Safely </b>  
 								<span class="image main"><img src="images/phase2.png" alt="" /></span>      </p>
 
-								<p>  <b> The third phase is all about Release Control </b>  <br/>
+								<p>  <b> The third phase is all about Release Control </b>  
 								<span class="image main"><img src="images/phase3.png" alt="" /></span>      </p>
 
 
 
 
 								
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
