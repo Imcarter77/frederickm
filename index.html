@@ -214,15 +214,16 @@
 								The <b> gitlab-ci-pipelines-exporter </b> project provides a quickstart pattern where the exporter uses a GitLab API token with read_api access and exposes metrics on an HTTP endpoint such as :8080/metrics. 
 								<span class="image main"><img src="images/gitapi.png" alt="" /></span> 
 
-								<b>Docker Compose</b>A practical quickstart stack often includes three containers: the exporter, Prometheus, and Grafana, with Prometheus scraping the exporter endpoint and Grafana reading from Prometheus. <br/>
+								<b>Docker Compose</b><br/>
+								    A practical quickstart stack often includes three containers: the exporter, Prometheus, and Grafana, with Prometheus scraping the exporter endpoint and Grafana reading from Prometheus. <br/>
 									<span class="image main"><img src="images/services.png" alt="" /></span> 
 									<span class="image main"><img src="images/exposed.png" alt="" /></span>  <br/>
 								
-									<b>Prometheus scrape config</b> 
+									<b>Prometheus scrape config</b> <br/>
 									Prometheus needs a scrape target pointing to the exporter metrics endpoint, which is typically /metrics on the exporter container <br/>
 									<span class="image main"><img src="images/prome.png" alt="" /></span> 
 
-									<b>Grafana dashboard</b> 
+									<b>Grafana dashboard</b> <br/>
 									Grafana can visualize these pipeline metrics by using Prometheus as a data source, and an existing dashboard for GitLab CI pipelines is available as dashboard ID 10620 <br/>
 									<span class="image main"><img src="images/graf.png" alt="" /></span>  <br/><br/><br/>
 
