@@ -149,7 +149,7 @@
 
 								<p> <b> I will divide this into 3 phases</b> <br/> </p>
 
-							  <p> <b> The first Phase is all about Validation </b>  
+							    <p> <b> The first Phase is all about Validation </b>  
 								<span class="image main"><img src="images/phase1.png" alt="" /></span>      
 							    
 							
@@ -170,17 +170,43 @@
 							    </p>
 
 
-								<p>  <b> The second phase is all about Packaging Safely </b>  
-								<span class="image main"><img src="images/phase2.png" alt="" /></span>      </p>
+								<p>  <b> The Second Phase is all about Packaging Safely </b>  
+								<span class="image main"><img src="images/phase2.png" alt="" /></span>    
+
+								<b> 4.Security scan </b> <br/>
+								Security checks are commonly added as a dedicated pipeline stage so vulnerabilities are found before packaging or deployment. <br/>
+								<span class="image main"><img src="images/secscan.png" alt="" /></span>  
+
+
+								<b> 5.Build artifact or Docker image </b> <br/>
+								GitLab supports build jobs that create artifacts, and many teams also build and push Docker images as part of the same stage<br/>
+								<span class="image main"><img src="images/buildd.png" alt="" /></span>  
+								<span class="image main"><img src="images/builda.png" alt="" /></span>  
+				
+							
+							  </p>
 
 								<p>  <b> The third phase is all about Release Control </b>  
 								<span class="image main"><img src="images/phase3.png" alt="" /></span>      </p>
 
+								<b> 6.Deploying to Stage </b> <br/>
+								GitLab environments are commonly used to represent staging and production deployments in the pipeline<br/>
+								<span class="image main"><img src="images/depstage.png" alt="" /></span>  
+
+								<b> 7.Manual approval gate </b> <br/>
+								A manual approval step is a standard way to pause a pipeline before production, especially where segregation of duties or release assurance matters.<br/>
+								<span class="image main"><img src="images/manappr.png" alt="" /></span>  
+
+								
+								<b> 9.Deploy to production </b> <br/>
+								GitLab supports manual or controlled deployments to production through deployment jobs tied to a production environment.<br/>
+								<span class="image main"><img src="images/depprod.png" alt="" /></span>  
+
+								
 
 
 
 								
-
 
 
                                 <p> <h2 class="subheading"> SECURITY </h2> </p>
